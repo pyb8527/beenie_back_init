@@ -1,0 +1,22 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+dependencies {
+    implementation project(':storage:jpa')
+    implementation project(':storage:mybatis')
+    implementation project(':storage:redis')
+    implementation project(':storage:rabbitmq')
+
+    implementation project(':support:common')
+    implementation project(':support:exception')
+    implementation project(':support:logging')
+    implementation project(':support:util')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}

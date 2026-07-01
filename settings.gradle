@@ -1,0 +1,13 @@
+rootProject.name = 'backend-init'
+
+include 'core'
+
+include 'storage:jpa'
+include 'storage:mybatis'
+include 'storage:redis'
+include 'storage:rabbitmq'
+
+include 'support:common'
+include 'support:exception'
+include 'support:logging'
+include 'support:util'
